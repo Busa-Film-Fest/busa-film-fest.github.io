@@ -14,3 +14,12 @@ $('#header').load('/template/header.html', () => {
 });
 
 $('#footer').load('/template/footer.html');
+
+// Set sticky navbar
+$(window).scroll(function(e) {
+  if ($(this).scrollTop() > 60) {
+    $('#header > .navbar').addClass('compact');
+  } else {
+    $('#header > .navbar').removeClass('compact');
+  }
+});
