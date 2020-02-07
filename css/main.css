@@ -22,7 +22,7 @@ html, body {
 
 body {
   /* background-image: url('/img/bg-desktop.svg'); */
-  background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/img/bg-desktop.svg");
+  background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("./img/bg-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

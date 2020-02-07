@@ -5,7 +5,7 @@ const scrollToElement = (elementId, offset) => {
 };
 
 
-$('#header').load('/template/header.html', () => {
+$('#header').load('./template/header.html', () => {
   $('.nav-link').click(e => {
     e.preventDefault();
     const targetSection = e.currentTarget.hash;
@@ -13,7 +13,7 @@ $('#header').load('/template/header.html', () => {
   });
 });
 
-$('#footer').load('/template/footer.html');
+$('#footer').load('./template/footer.html');
 
 // Set sticky navbar
 $(window).scroll(function(e) {
