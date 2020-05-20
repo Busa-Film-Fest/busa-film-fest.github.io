@@ -22,7 +22,7 @@ html, body {
 
 body {
   /* background-image: url('/img/bg-desktop.svg'); */
-  background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('https://francescocretti.github.io/bff-website/img/bg-desktop.svg');
+  background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url('https://francescocretti.github.io/bff-website/img/bg-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -110,8 +110,17 @@ p {
   color: rgba(0,0,0,1);
 }
 
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .section-container {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .cta-button {
@@ -199,4 +208,24 @@ p {
 @media screen and (max-width: 768px) {}
 
 /* SMARTPHONES (portait) */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .navbar-light .nav-item {
+    padding: .6rem 1rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+    /* font-weight: 900; */
+    font-size: 1rem;
+  }
+
+  .navbar-collapse {
+    background-color: pink;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .as-card {
+    margin-bottom: 2rem;
+  }
+}
