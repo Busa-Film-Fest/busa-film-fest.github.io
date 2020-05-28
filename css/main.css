@@ -232,4 +232,9 @@ p {
   .as-card {
     margin-bottom: 2rem;
   }
+
+  .cta-card-head {
+    height: unset;
+    margin-top: 3rem;
+  }
 }
