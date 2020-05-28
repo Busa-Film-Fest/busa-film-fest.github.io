@@ -143,6 +143,10 @@ p {
   text-align: center;
 }
 
+.cta-card-head {
+  height: 75px;
+}
+
 .as-card {
   display: flex;
   flex-direction: column;
