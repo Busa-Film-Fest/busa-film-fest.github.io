@@ -6,11 +6,14 @@ const scrollToElement = (elementId, offset) => {
 
 
 $('#header').load('./template/header.html', () => {
-  $('.nav-link').click(e => {
-    e.preventDefault();
-    const targetSection = e.currentTarget.hash;
-    scrollToElement(e.currentTarget.hash, -80);
-  });
+  if (window.location.pathname === '/') {
+    $('.nav-link').click(e => {
+      if (e.currentTarget.hash) {
+        e.preventDefault();
+        scrollToElement(e.currentTarget.hash, -80);
+      }
+    });
+  }
 });
 
 $('#footer').load('./template/footer.html');
