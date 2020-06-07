@@ -90,6 +90,10 @@ ol > li::before {
   font-weight: 900;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(50, 50, 50, .2);
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -174,16 +178,17 @@ ol > li::before {
 }
 
 .cta-card-head {
-  height: 75px;
+  min-height: 75px;
+}
+
+.cta-card p {
+  min-height: 165px;
 }
 
 .as-card {
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
-  /* justify-content: flex-start; */
-  /* align-items: center; */
-  /* text-align: center; */
 }
 
 .cta-card h3 {
@@ -237,23 +242,13 @@ ol > li::before {
 }
 
 /* SMALL SCREENS AND iPad PRO */
-@media screen and (max-width: 1199px) {}
-
-/* VERY SMALL SCREENS AND LARGE TABLETS */
-@media screen and (max-width: 991px) {}
-
-/* TABLETS */
-@media screen and (max-width: 768px) {}
-
-/* SMARTPHONES (portait) */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1199px) {
   .navbar-light .nav-item {
     padding: .6rem 1rem;
   }
 
   .navbar-light .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
-    /* font-weight: 900; */
     font-size: 1rem;
   }
 
@@ -262,14 +257,27 @@ ol > li::before {
     margin-left: -8px;
     margin-right: -8px;
   }
+}
 
+/* VERY SMALL SCREENS AND LARGE TABLETS */
+@media screen and (max-width: 991px) {
   .as-card {
     margin-bottom: 2rem;
   }
+}
 
+/* TABLETS */
+@media screen and (max-width: 768px) {}
+
+/* SMARTPHONES (portait) */
+@media screen and (max-width: 576px) {
   .cta-card-head {
     height: unset;
     margin-top: 3rem;
+  }
+
+  .cta-card p {
+    height: unset;
   }
 
   .mail-add {
