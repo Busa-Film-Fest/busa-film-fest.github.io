@@ -26,3 +26,31 @@ $(window).scroll(function(e) {
     $('#header > .navbar').removeClass('compact');
   }
 });
+
+// cookie consent banner
+const bottomLimit = document.body.offsetHeight - window.innerHeight - 100;
+if (window.cookieconsent) {
+  console.log('inizi cookie banner')
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#edeff5",
+        "text": "#071e3d"
+      },
+      "button": {
+        "background": "#e96a63",
+        "text": "#ffffff"
+      }
+    },
+    "position": "bottom",
+    "theme": "classic",
+    "dismissOnScroll": bottomLimit,
+    "dismissOnWindowClick": true,
+    "content": {
+      "message": "Ciao amici! Questo sito utilizza i cookie di Google Analytics esclusivamente per scopi statistici, non finalizzati a scopi commerciali.",
+      "dismiss": "Capito!",
+      "link": "Scopri di più",
+      "href": "/cookie-policy"
+    }
+  });
+}
