@@ -78,6 +78,10 @@ ol > li::before {
   text-transform: uppercase;
 }
 
+.linethrough {
+  text-decoration: line-through;
+}
+
 .spaced {
   letter-spacing: 5px;
 }
