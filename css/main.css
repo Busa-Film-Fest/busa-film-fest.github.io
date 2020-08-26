@@ -295,6 +295,29 @@ footer > p {
   transition: opacity .3s;
 }
 
+/* FINALISTI */
+.presentation-col {
+  margin: .5rem auto;
+}
+
+.presentation-image,
+.presentation-video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.presentation-image {
+  transition: opacity .3s ease-in-out;
+}
+
+.presentation-image:hover {
+  opacity: .7;
+}
+
+.presentation-video {
+  display: none;
+}
+
 /* SMALL SCREENS AND iPad PRO */
 @media screen and (max-width: 1300px) {
   .navbar {
