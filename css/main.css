@@ -6,6 +6,7 @@
   --green : #01AE93;
   --red : #e96a63;
   --purple : #9b86be;
+  --cream: #FCF9EB;
 }
 
 /* GENERAL */
@@ -25,10 +26,11 @@ html, body {
 
 body {
   /* background-image: url('/img/bg-desktop.svg'); */
-  background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url('https://busafilmfest.it/img/bg-desktop.svg');
+  /* background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url('https://busafilmfest.it/img/bg-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top; */
+  background-color: var(--cream);
 }
 
 h1 {
