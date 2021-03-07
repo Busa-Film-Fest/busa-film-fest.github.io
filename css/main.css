@@ -193,12 +193,18 @@ ol > li::before {
   text-align: center;
 }
 
+.cta-card:nth-child(3) {
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: #e2e2e2;
+}
+
 .cta-card-head {
   min-height: 75px;
 }
 
 .cta-card p {
-  min-height: 165px;
+  min-height: 240px;
 }
 
 .as-card {
@@ -391,6 +397,7 @@ footer > p {
 
   .cta-card p {
     height: unset;
+    min-height: unset;
   }
 
   .mail-add {
