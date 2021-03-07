@@ -121,7 +121,7 @@ ol > li::before {
 
 .navbar.compact {
   /* background-color: rgba(0,0,0,0.3); */
-  background-color: pink;
+  background-color: var(--yellow);
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -362,9 +362,13 @@ footer > p {
   }
 
   .navbar-collapse {
-    background-color: pink;
+    background-color: var(--yellow);
     margin-left: -8px;
     margin-right: -8px;
+  }
+
+  #navbarNav .dropdown-menu {
+    background-color: transparent;
   }
 }
 
