@@ -29,8 +29,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="it_IT" />
   <meta property="og:title" content="Busa Film Fest" />
-  <meta property="og:description"
-    content="Rassegna di cortometraggi. Contest di poesia, illustrazione e fotografia." />
+  <meta property="og:description" content="Rassegna di cortometraggi. Contest di poesia, illustrazione e fotografia." />
   <meta property="og:image" content="https://busafilmfest.it/img/2021-logo-black.png" />
   <meta property="og:image:width" content="1861" />
   <meta property="og:image:height" content="1234" />
@@ -52,17 +51,27 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <style>
-    body {
-      background-image: url('/img/2021-bg-desktop.jpg');
-      background-repeat: no-repeat;
+    body:before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url('/img/2021-bg-desktop.jpg') no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
-      background-attachment: fixed;
     }
 
     /* TABLETS and smaller */
     @media screen and (max-width: 768px) {
-      body {
-        background-image: url('/img/2021-bg-mobile-comp.jpg');
+      body:before {
+        background: url('/img/2021-bg-mobile-comp.jpg') no-repeat;
+        background-size: cover;
       }
     }
   </style>
@@ -166,7 +175,8 @@
           altre aziende o enti locali. Perché solo l’unione può creare qualcosa di realmente forte.
         </p>
         <p>
-          Nel 2021 poi, Busa Film Fest è entrata a far parte di Busa Network, una rete di associazioni dell’Alto Garda.
+          Nel 2021 poi, Busa Film Fest è entrata a far parte di Busa Network, una rete di associazioni dell’Alto
+          Garda.
           Per dimostrare ancora una volta che uniti si può fare di più, e si può fare meglio.
         </p>
       </div>
@@ -194,6 +204,7 @@
   </div>
 
   <div id="footer"></div>
+
 
   <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
 
