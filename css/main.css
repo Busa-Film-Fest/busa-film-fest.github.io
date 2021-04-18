@@ -432,6 +432,11 @@ footer>p {
   width: 100%;
 } */
 
+.bando-intro-icon {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
 /* SMALL SCREENS AND iPad PRO */
 
 @media screen and (max-width: 1300px) {
