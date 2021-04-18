@@ -1,5 +1,7 @@
 /* FONTS */
+
 /* regular */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: normal;
@@ -8,6 +10,7 @@
 }
 
 /* medium */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: normal;
@@ -16,6 +19,7 @@
 }
 
 /* semi bold */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: normal;
@@ -24,6 +28,7 @@
 }
 
 /* bold */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: normal;
@@ -32,6 +37,7 @@
 }
 
 /* regular italic */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: italic;
@@ -40,6 +46,7 @@
 }
 
 /* medium italic */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: italic;
@@ -48,6 +55,7 @@
 }
 
 /* semi bold italic */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: italic;
@@ -56,6 +64,7 @@
 }
 
 /* bold italic */
+
 @font-face {
   font-family: 'Basier Circle';
   font-style: italic;
@@ -64,18 +73,23 @@
 }
 
 /* VARIABLES */
+
 :root {
   /* variables */
   --header-h: 88px;
-  --yellow: #F3C87A;
-  --green: #01AE93;
-  --red: #e96a63;
-  --purple: #9b86be;
+  --yellow: #f2b950;
+  --green: #15bf81;
+  --red: #f29494;
+  --purple: #7f6df2;
   --cream: #FCF9EB;
   --color-pink: #f29494;
+  --color-pink-rgb: 242, 148, 148;
   --color-yellow: #f2b950;
+  --color-yellow-rgb: 242, 185, 80;
   --color-green: #15bf81;
+  --color-green-rgb: 21, 191, 129;
   --color-purple: #7f6df2;
+  --color-purple-rgb: 127, 109, 242;
 }
 
 /* GENERAL */
@@ -191,7 +205,7 @@ ol>li::before {
 
 .navbar.compact {
   /* background-color: rgba(0,0,0,0.3); */
-  background-color: var(--yellow);
+  background-color: var(--color-yellow);
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -437,7 +451,7 @@ footer>p {
     font-size: 1rem;
   }
   .navbar-collapse {
-    background-color: var(--yellow);
+    background-color: var(--color-yellow);
     margin-left: -8px;
     margin-right: -8px;
   }
