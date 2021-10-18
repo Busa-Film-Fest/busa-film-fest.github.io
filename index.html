@@ -67,6 +67,24 @@
       background-size: cover;
     }
 
+    .rwd-video {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+    }
+
+    .rwd-video iframe,
+    .rwd-video object,
+    .rwd-video embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
     /* TABLETS and smaller */
     @media screen and (max-width: 768px) {
       body:before {
@@ -83,6 +101,42 @@
   <div id="header"></div>
 
   <div id="intro-section" class="container section-container">
+
+    <div class="row mb-4 pb-4">
+      <div class="col-12 mb-4">
+        <h1 class="text-center uppercase spaced bold text-shadow">
+          Ecco i finalisti della seconda edizione di Busa Film Fest (2021)!
+        </h1>
+        <p>
+          Per una settimana rendiamo visibili i loro cortometraggi d’autore qui sul nostro sito per le persone che non
+          hanno avuto la possibilità di essere presenti alla rassegna. Godeteveli!
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <h3 class="uppercase spaced bold">Senza Limiti</h3>
+        <h5>Roberto Trainotti e Associazione Relab</h5>
+        <div class="rwd-video">
+          <iframe src="https://www.youtube.com/embed/Cslj1Kjwvaw" width="560" height="315" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <h3 class="uppercase spaced bold">Occhio di Deva</h3>
+        <h5>Juan Colombo</h5>
+        <div class="rwd-video">
+          <iframe src="https://www.youtube.com/embed/Lb3eqAlto50" width="560" height="315" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+    </div>
+
     <div class="row">
       <div class="col-12">
         <h1 class="text-center uppercase spaced bold text-shadow">Cos'è BFF</h1>
@@ -208,16 +262,8 @@
   <script src="./js/lib/cookieconsent.min.js"></script>
   <script src="./js/lib/jquery-3.4.1.min.js"></script>
   <script src="./js/lib/bootstrap.bundle.min.js"></script>
-  <script src="./js/lib/splide.min.js"></script>
   <script src="./js/index.js"></script>
 
-  <script type="text/javascript">
-    const options = {
-      'cover': true,
-      'heightRatio': 0.5,
-    };
-    document.addEventListener('DOMContentLoaded', () => new Splide('#image-slider', options).mount());
-  </script>
 </body>
 
 </html>
