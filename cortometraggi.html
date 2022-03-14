@@ -50,8 +50,20 @@
   <link rel="stylesheet" href="/css/main.css">
 
   <style>
-    body {
-      background-color: rgba(var(--color-purple-rgb), .8);
+    body:before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url('/img/2022-bg-desktop.jpg') no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
   </style>
 
@@ -61,51 +73,52 @@
 
   <div id="header"></div>
 
-  <div id="intro-section" class="container">
+  <div id="intro-section" class="container section-container">
     <div class="row">
       <div class="col-12 mx-auto text-center">
-        <img class="bando-intro-icon" src="./img/2021-icon-cortometraggi.png" alt="Cortometraggi">
-        <h1 class="text-shadow">BANDO SEZIONE CORTOMETRAGGI</h1>
+        <h1 class="text-shadow">BANDO SEZIONE CORTOMETRAGGIO 2022</h1>
       </div>
-    </div>
-  </div>
-
-  <div class="container section-container">
-    <div class="row">
 
       <div class="col-12">
-        <h2 class="spaced bold">Cos'è</h2>
         <p>
-          Protagonista del BFF è la rassegna dei cortometraggi.
           Nel mondo del cinema e della scrittura il cortometraggio
           rappresenta il biglietto da visita dei nuovi talenti, ma non solo.
           È uno strumento perfetto per concentrarsi su un messaggio chiaro,
-          un’idea pulita, un gesto semplice. È la forma breve che contiene
-          le nostre storie, uno scorcio su una realtà che viviamo
-          ogni giorno o che non siamo per niente abituati a vedere.
-          Fosse poesia, sarebbe un haiku.
+          un’idea pulita, un gesto semplice. Busa Film Fest si rinnova per
+          la terza edizione regalando ai finalisti una formazione
+          con Anita Rivaroli e Diego Botta, rispettivamente sceneggiatrice
+          di Skam Italia, Summertime e Tutto può succedere e il regista vincitore del premio David
+          nella sezione cortometraggi con il suo “Jody delle Giostre”.
+          Diego inoltre ha presentato a Venezia il suo cortometraggio “Revenge Room” nel 2021. 
         </p>
       </div>
+    </div>
+    <div class="row">
       <div class="col-12 mt-5">
         <h2 class="spaced bold">Chi partecipa</h2>
         <p>
-          La partecipazione è libera per sceneggiatori, registi e produttori
-          professionisti o aspiranti tali, singoli o in gruppo, di ogni nazionalità,
-          purché abbiano <b>un’età compresa fra i 15 e i 30 anni</b>.
+          La partecipazione è libera per sceneggiatori, registi e produttori professionisti
+          o aspiranti tali, singoli o in gruppo, di ogni nazionalità, purché
+          abbiano un’età compresa fra <b>i 15 e i 30 anni</b>.
+        </p>
+        <p>
+          <b>Per ogni gruppo bisognerà indicare il nome dello sceneggiatore o sceneggiatrice
+          e del/della regista (indicare anche se i ruoli sono ricoperti da un’unica persona).</b> 
+          Entrambe le figure avranno la possibilità di partecipare al workshop.          
         </p>
       </div>
       <div class="col-12 mt-5">
         <h2 class="spaced bold">Tema</h2>
         <p>
-          <b>Il tema per i cortometraggi è libero.</b>
+          Il tema per i cortometraggi è libero.
         </p>
       </div>
       <div class="col-12 mt-5">
         <h2 class="spaced bold">Termini</h2>
         <p>
-          Il cortometraggio può avere una <b> durata massima di 15 minuti</b>.
+          Il cortometraggio può avere una <b>durata massima di 20 minuti</b>.
           Carica il tuo cortometraggio su Vimeo in modalità privata, inviaci il
-          link e la password per accedervi in un documento formato <i><b>PDF</b></i>
+          link e la password per accedervi in un documento formato .pdf
           all'indirizzo <a href="mailto:busafilmfest@gmail.com">busafilmfest@gmail.com</a>
           allegando <b> <a href="/docs/BFF_modulo_iscrizione_cortometraggi.pdf">questo modulo d’iscrizione</a></b>
           compilato in tutte le sue parti.
@@ -115,43 +128,46 @@
         <p>
           In più, BFF vuole conoscervi come fossimo già amici e gli amici prima
           di tutto si presentano. Ti chiediamo di allegare al modulo di iscrizione
-          un <b>video di 15 secondi</b>, formato verticale .mp4, rispettando questa
+          <b>un video di 15 secondi</b>, formato verticale .mp4, rispettando questa
           semplice scaletta: Chi sei, come si chiama il tuo progetto, e un finale
-          citando BFF (es. E non vedo l’ora di presentarlo a BFF! / E presto avrò dei nuovi BFF!).
+          citando BFF (es. E non vedo l’ora di presentarlo a BFF! / E presto avrò dei nuovi BFF!).           
         </p>
         <p>
           L’application form, la copia della ricevuta di pagamento, il file
-          PDF con link e password e il video di presentazione dovranno essere
-          inviati improrogabilmente <b>entro il 25 giugno 2021</b>.
+          .pdf con link e password e il video di presentazione dovranno essere
+          inviati improrogabilmente <b>entro il 15 giugno 2022</b>.
         </p>
       </div>
       <div class="col-12 mt-5">
         <h2 class="spaced bold">Costi</h2>
         <p>
-          La partecipazione del concorso ha un costo di <b>15€ per ogni opera</b>
-          inviata fino a un massimo di tre. L’importo è da accreditare
-          tramite un bonifico al CC presso la banca <i>Cassa Rurale Alto Garda</i>,
-          intestato a <i>Busa Film Fest</i>, IBAN <i>IT98 N080 1635 3230 0000 9410 343</i>,
-          con causale <i>Iscrizione contest cortometraggi BFF 2021</i>.
-
-          Tutto il ricavato verrà reinvestito nel Fest, per coprire i costi di questa edizione e
-          per sostenere le prossime.
+          La partecipazione del concorso <b>ha un costo di 20€</b>
+          per ogni opera inviata fino a un massimo di tre. <b>Fino al 15 aprile l’iscrizione
+          costa 15€</b>. L’importo è da accreditare via bonifico
+          all’indirizzo IT98 N080 1635 3230 0000 9410 343 .
+          
+          Tutto il ricavato verrà reinvestito nel Fest, per coprire
+          i costi di questa edizione e per sostenere le prossime.
         </p>
       </div>
       <div class="col-12 mt-5">
         <h2 class="spaced bold">Premi</h2>
         <p>
-          Verranno selezionati un massimo di dieci cortometraggi.
-          I finalisti selezionati <b>vinceranno tre giorni di workshop (1-2-3 settembre) ad Arco (TN)</b> con
-          professionisti del mestiere.
-          <b>La mancata presenza al workshop escluderà il partecipante dalla rosa dei finalisti.</b>
-          <b>Il workshop sarà fisico o online in base alle disposizioni di legge.</b>
-          Le attività avranno l’obiettivo di interconnettere i talenti e dare vita a uno spazio di condivisione e
-          confronto.
-          Nella serata del 4 settembre 2021 verranno proiettati i cortometraggi selezionati.
-          Prima della proiezione di ogni corto inviteremo sul palco l’autore.
-          Ognuno avrà un paio di minuti a disposizione per raccontare se stesso e il suo progetto al pubblico presente.
-          La sera della proiezione verrà consegnato un premio dal pubblico e uno dalla giuria.
+          Verranno selezionati un massimo di dieci cortometraggi. 
+          I finalisti selezionati <b>vinceranno un workshop formativo della durata di due giorni
+          (sabato e domenica: 9-10 luglio 2022) ad Arco (TN) con Anita Rivaroli e Diego Botta</b>.
+          Inoltre, l’alloggio per i finalisti è a carico di Busa Film Fest per entrambe le notti
+          richieste per il workshop (venerdì e sabato). È richiesta la presenza sia del/della
+          regista del cortometraggio selezionato che del/della sceneggiatore del suddetto. 
+          <b>La mancata presenza al workshop escluderà i partecipanti dalla rosa dei finalisti</b>.
+          Le attività proposte nel workshop comprenderanno confronti con i professionisti e una masterclass di formazione con loro.
+        </p>
+        <p> 
+          Nella serata del 9 luglio 2022 verranno proiettati i cortometraggi selezionati.
+          Prima della proiezione di ogni corto inviteremo sul palco l’autore. Ognuno avrà
+          un paio di minuti a disposizione per raccontare se stesso e il suo progetto
+          al pubblico presente. La sera della proiezione verrà consegnato un premio
+          dal pubblico e uno dalla giuria.
         </p>
       </div>
       <div class="col-12 mt-5">
